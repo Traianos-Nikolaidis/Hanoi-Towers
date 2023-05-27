@@ -9,8 +9,8 @@ use App\Http\Controllers\Controller;
 class QuizController extends Controller
 {
     public function index()
-{
-    $quizzes = Quiz::all();
-    return response()->json($quizzes);
-}
+    {
+        $quizzes = Quiz::all();
+        return response()->json($quizzes);
+    }
 }

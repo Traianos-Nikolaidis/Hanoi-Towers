@@ -42,7 +42,7 @@
                         </li>
                     @endif
                     <li style="padding-right: 30px;" class="nav-item">
-                        <a class="nav-link" href="{{ route('quiz.index') }}">Quizzes</a>
+                        <a class="nav-link" href="{{ route('quiz.index') }}">Play Quiz</a>
                     </li>
                     <li style="padding-right: 30px;" class="nav-item">
                         <a class="nav-link" href="{{ route('my-stats') }}">My Stats</a>

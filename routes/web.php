@@ -35,7 +35,7 @@ Route::get('/welcome', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [UserQuizController::class, 'myStats'])->middleware('auth')->name('home');
 
 Route::group(['middleware' => ['auth', 'superadmin', 'admin']], function () {
     Route::resource('users', 'App\Http\Controllers\UserController', ['except' => ['create', 'store', 'show']]);

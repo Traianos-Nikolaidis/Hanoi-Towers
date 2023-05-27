@@ -31,8 +31,8 @@
                                 <td>{{ $user->email }}</td>
                                 <td>{{ $user->role }}</td>
                                 <td>
-                                    <a href="{{ route('stats.index', 'player_id='.$user->id) }}" class="btn btn-primary">View stats</a>
-                                    <a href="{{ route('users.edit', $user->id) }}" class="btn btn-primary">Edit</a>
+                                    <a href="{{ route('stats.user-quizzes',$user->id) }}" class="btn btn-primary">View stats</a>
+                                    <a href="{{ route('users.edit', $user->id) }}" class="btn btn-warning">Edit</a>
                                     
                                     <form action="{{ route('users.destroy', $user->id) }}" method="POST" class="d-inline">
                                         @csrf

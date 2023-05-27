@@ -527,6 +527,7 @@
 					ctx.fillStyle = "green";
 					ctx.textAlign = "center";
 					ctx.fillText("Success", canvas.width / 2, canvas.height / 2);
+					stopGame();
 				} else {
 					completed='fail';
 					ctx.font = "50px Arial";
